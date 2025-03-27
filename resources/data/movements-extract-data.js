@@ -1,16 +1,6 @@
 import fs from 'fs'
 import { DateTime } from 'luxon'
 
-let arrival = '1/1/23 11:13'
-let depature = '1/2/23 6:30'
-
-const start = DateTime.fromFormat(arrival, 'M/d/yy H:m')
-const end = DateTime.fromFormat(depature, 'M/d/yy H:m')
-
-const diff = end.diff(start, 'hours').toObject().hours
-
-
-
 const ships = JSON.parse(fs.readFileSync('./movements.json'))
 const data = {
     names: [],
