@@ -102,8 +102,28 @@ const data = {
     }
 }
 
+const shipCount = {
+    "CRUISE": 0,
+    "DREDGER": 0,
+    "FERRY": 0,
+    "FREIGHTER": 0,
+    "FUEL BARGE": 0,
+    "MISC BARGE": 0,
+    "MISCELLANEOUS": 0,
+    "STEAMBOAT": 0,
+    "TUG": 0,
+    "WAVE PIERCING CRAFT": 0,
+}
+
+const yachts = []
 
 ships.forEach(ship => {
+    shipCount[ship.type]++
+    if (['WAVE PIERCING CRAFT'].includes(ship.type)) {
+        yachts.push(ship.name)
+    } else if (ship.grt < 75 && !ship.name.includes('DUMMY') && !ship.name.includes('TEST') && ship.name) {
+        yachts.push(ship.name)
+    }
     data.types.push(ship.type)
     data.ports.push(ship.port)
     data.countries.push(ship.nationality)
@@ -115,5 +135,9 @@ const dedupedData = {
     countries: [...new Set(data.countries)].filter(c => c).sort(),
     emoji: data.emoji,
 }
+
+console.log(shipCount)
+console.log(yachts)
+console.log(yachts.length)
 
 fs.writeFileSync('./ships-types.json', JSON.stringify(dedupedData, null, 2))

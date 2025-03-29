@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>boats?</title>
+        <title>Portal Kombat</title>
 
         <link href="https://uchu.style/color.css" rel="stylesheet"/>
 
@@ -12,22 +12,17 @@
         <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg" />
         <link rel="shortcut icon" href="/assets/icons/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
-        <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+        <meta name="apple-mobile-web-app-title" content="Portal Kombat" />
         <link rel="manifest" href="/assets/icons/site.webmanifest" />
 
-        <style>
-            body {
-                padding: 2em;
-                background-color: var(--uchu-light-yellow);
-                color: var(--uchu-dark-blue);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-                font-family: 'Nimbus Mono PS', 'Courier New', monospace;
-                font-weight: normal;
-            }
+        <meta property="og:title" content="Portal Kombat">
+        <meta property="og:url" content="https://portkom.rknight.me">
+        <meta name="description" content="Boat Battles">
+        <meta property="og:description" content="Boat Battles">
+        <meta property="og:image" content="/assets/icons/preview.jpg" />
+        <meta name="fediverse:creator" content="@robb@social.lol">
 
+        <style>
             @font-face {
                 font-family: 'ShipsWhistle-Bold';
                 src: url('/assets/fonts/ShipsWhistle-Bold.woff2 ') format('woff2');
@@ -48,32 +43,48 @@
                 src: url('/assets/fonts/ShipsWhistle-Regular.woff2 ') format('woff2');
                 font-display: swap;
             }
-
-            strong {
-                font-family: 'ShipsWhistle-Bold', system-ui, sans-serif;
+            @font-face {
+                font-family: 'Dusty';
+                src: url('/assets/fonts/Dusty.woff2 ') format('woff2');
+                font-display: swap;
             }
 
-            strong em {
-                font-family: 'ShipsWhistle-BoldItalic', system-ui, sans-serif;
+            body {
+                font-size: 1.2em;
+                padding: 2em;
+                background-color: var(--uchu-light-yellow);
+                color: var(--uchu-dark-blue);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                font-family: 'ShipsWhistle-Regular', system-ui, sans-serif;
+                font-weight: normal;
             }
 
-            em {
+            strong { font-family: 'ShipsWhistle-Bold', system-ui, sans-serif; }
+            strong em { font-family: 'ShipsWhistle-BoldItalic', system-ui, sans-serif; }
+            em { font-family: 'ShipsWhistle-Italic', system-ui, sans-serif; }
+
+            h1 {
                 font-family: 'ShipsWhistle-Italic', system-ui, sans-serif;
+                font-feature-settings: 'ss01';
+                margin-top: 0;
+                font-size: 2.5em;
             }
-
-            h1, h2, h3 {
+            h2, h3 {
                 font-family: 'ShipsWhistle-Bold', system-ui, sans-serif;
                 font-weight: bold;
                 font-feature-settings: 'ss02';
                 text-transform: uppercase;
             }
 
-            p {
-                font-family: 'ShipsWhistle-Regular', system-ui, sans-serif;
+            .dusty {
+                font-family: 'Dusty', system-ui, sans-serif;
                 font-weight: normal;
             }
 
-            .icon {
+            .test-icon {
                 width: 50px;
                 height: 50px;
                 border: 3px solid var(--uchu-dark-blue);
@@ -125,25 +136,35 @@ boats?
                                ~~~~~~
 </pre>
 
-<h1>Boats?</h1>
+<svg class="icon"><use xlink:href="#logo"></use></svg>
 
-{{-- <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); width: 100%;">
-    <svg class="icon"><use xlink:href="#logo"></use></svg>
-    <svg class="icon"><use xlink:href="#barge-fuel"></use></svg>
-    <svg class="icon"><use xlink:href="#barge-misc"></use></svg>
-    <svg class="icon"><use xlink:href="#cruise"></use></svg>
-    <svg class="icon"><use xlink:href="#dredger"></use></svg>
-    <svg class="icon"><use xlink:href="#ferry"></use></svg>
-    <svg class="icon"><use xlink:href="#freighter"></use></svg>
-    <svg class="icon"><use xlink:href="#misc"></use></svg>
-    <svg class="icon"><use xlink:href="#streamboat"></use></svg>
-    <svg class="icon"><use xlink:href="#tug"></use></svg>
-    <svg class="icon"><use xlink:href="#wave-piercer"></use></svg>
-<div> --}}
+<h1>Portal Kombat</h1>
+
+<p class="dusty">YACHT OR NOT?</p>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); width: 100%;">
+    <svg class="test-icon"><use xlink:href="#barge-fuel"></use></svg>
+    <svg class="test-icon"><use xlink:href="#barge-misc"></use></svg>
+    <svg class="test-icon"><use xlink:href="#cruise"></use></svg>
+    <svg class="test-icon"><use xlink:href="#dredger"></use></svg>
+    <svg class="test-icon"><use xlink:href="#ferry"></use></svg>
+    <svg class="test-icon"><use xlink:href="#freighter"></use></svg>
+    <svg class="test-icon"><use xlink:href="#misc"></use></svg>
+    <svg class="test-icon"><use xlink:href="#streamboat"></use></svg>
+    <svg class="test-icon"><use xlink:href="#tug"></use></svg>
+    <svg class="test-icon"><use xlink:href="#wave-piercer"></use></svg>
+<div>
 <svg width="0" height="0" class="hidden">
-  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 866 866" id="logo">
-    <path fill="currentColor" stroke="none" d="M 465 273 C 465 290.673096 450.673126 305 433 305 C 415.326874 305 401 290.673096 401 273 C 401 255.326904 415.326874 241 433 241 C 450.673126 241 465 255.326904 465 273 Z M 486.100006 353 C 512 335.799988 529 306.400024 529 273 C 529 220 486 177 433 177 C 380 177 337 220 337 273 C 337 306.400024 354 335.799988 379.899994 353 L 369 353 C 351.300018 353 337 367.299988 337 385 C 337 402.700012 351.300018 417 369 417 L 401 417 L 401 625 L 353 625 C 300 625 257 582 257 529 L 257 522.900024 L 264 529.900024 C 273.399994 539.299988 288.600006 539.299988 297.899994 529.900024 C 307.200012 520.5 307.300018 505.299988 297.899994 496 L 242 440 C 232.600006 430.600006 217.400009 430.600006 208.100006 440 L 152 496 C 142.600006 505.399994 142.600006 520.599976 152 529.900024 C 161.399994 539.200012 176.600006 539.299988 185.900009 529.900024 L 192.900009 522.900024 L 192.900009 529 C 192.900009 617.400024 264.5 689 352.899994 689 L 432.899994 689 L 512.900024 689 C 601.299988 689 672.900024 617.400024 672.900024 529 L 672.900024 522.900024 L 679.900024 529.900024 C 689.299988 539.299988 704.5 539.299988 713.799988 529.900024 C 723.099976 520.5 723.200012 505.299988 713.799988 496 L 657.799988 440 C 648.400024 430.600006 633.200012 430.600006 623.900024 440 L 567.900024 496 C 558.5 505.399994 558.5 520.599976 567.900024 529.900024 C 577.299988 539.200012 592.5 539.299988 601.799988 529.900024 L 608.799988 522.900024 L 608.799988 529 C 608.799988 582 565.799988 625 512.799988 625 L 464.799988 625 L 464.799988 417 L 496.799988 417 C 514.5 417 528.799988 402.700012 528.799988 385 C 528.799988 367.299988 514.5 353 496.799988 353 L 485.899994 353 Z"></path>
-    <path fill="currentColor" fill-rule="evenodd" stroke="none" d="M 433 866 C 193.861053 866 0 672.139038 0 433 C 0 193.860962 193.861053 0 433 0 C 672.138977 0 866 193.860962 866 433 C 866 672.139038 672.138977 866 433 866 Z M 433 798.868225 C 635.063232 798.868225 798.868225 635.063232 798.868225 433 C 798.868225 230.936768 635.063232 67.131775 433 67.131775 C 230.936768 67.131775 67.13179 230.936768 67.13179 433 C 67.13179 635.063232 230.936768 798.868225 433 798.868225 Z"></path>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 991 991" id="logo">
+    <g id="logo-circle">
+      <path id="path1" fill="#ff9e5b" fill-rule="evenodd" stroke="none" d="M 860 495.5 C 860 294.1922 696.8078 131 495.5 131 C 294.1922 131 131 294.1922 131 495.5 C 131 696.8078 294.1922 860 495.5 860 C 696.8078 860 860 696.8078 860 495.5 Z"></path>
+      <path id="path2" fill="#0749ac" fill-rule="evenodd" stroke="none" d="M 925 495.5 C 925 258.293701 732.706299 66 495.5 66 C 258.293701 66 66 258.293701 66 495.5 C 66 732.706299 258.293701 925 495.5 925 C 732.706299 925 925 732.706299 925 495.5 Z M 495.5 131 C 696.8078 131 860 294.1922 860 495.5 C 860 696.8078 696.8078 860 495.5 860 C 294.1922 860 131 696.8078 131 495.5 C 131 294.1922 294.1922 131 495.5 131 Z"></path>
+    </g>
+    <g id="logo-ship">
+      <path id="Path" fill="#0749ac" stroke="none" d="M 330.665771 267.336609 C 447.882782 465.625793 520.094238 641.991943 548.833679 797.313416 C 477.04422 702.221802 410.226501 603.438049 348.626587 501.444672 C 346.026123 497.090515 340.401917 495.572418 335.984467 498.068848 C 331.567078 500.565308 329.937561 506.162323 332.329987 510.642975 C 387.848602 614.584167 466.4216 733.947144 551.428894 857.56604 L 520.061829 903.043579 L 232.285934 429.839844 C 253.113602 402.168152 291.534332 343.616943 307.530914 271.065918 C 308.62088 265.986938 312.723907 262.114685 317.825928 261.291199 C 322.949371 260.502258 328.042755 262.865295 330.671722 267.34436 Z M 316.709656 406.17395 L 316.674988 406.195007 C 321.671173 414.410461 331.118378 418.779358 340.594177 417.338196 C 350.083008 415.841248 357.729431 408.816895 360.033051 399.486084 C 362.280365 390.141968 358.722412 380.387207 350.951019 374.713806 C 343.235535 369.054199 332.837097 368.587097 324.621429 373.583374 C 319.248413 376.850952 315.390472 382.141296 313.930817 388.252258 C 312.415497 394.34967 313.407257 400.821594 316.674988 406.194885 Z"></path>
+      <path id="path3" fill="#0749ac" stroke="none" d="M 560.188843 562.29834 L 530.114319 613.257446 C 495.487762 517.123169 453.238098 423.913147 403.804504 334.505554 C 425.803802 336.559021 447.552246 340.854614 468.667847 347.387756 L 559.673096 497.032104 C 571.927185 517.02594 572.076599 542.101929 560.187256 562.295654 Z"></path>
+      <path id="path4" fill="#0749ac" stroke="none" d="M 563.145447 721.374268 C 557.261597 698.503296 550.574402 675.171387 542.925293 651.427612 L 586.356384 577.768127 L 586.377441 577.802795 C 604.074524 547.95166 603.867004 510.754944 585.773254 481.158356 L 503.958618 346.626587 C 518.391052 349.198486 532.444641 353.567871 545.785217 359.653198 C 571.190918 371.601563 592.506409 390.880371 606.887207 414.995178 L 637.412292 465.189026 L 684.972229 436.265747 L 665.472168 404.200867 C 663.385193 400.769043 662.713318 396.61908 663.677551 392.660828 C 664.607361 388.723999 667.112976 385.348206 670.579773 383.239929 C 674.046509 381.131653 678.161499 380.480957 682.119751 381.445313 C 686.077637 382.409729 689.453369 384.915344 691.540588 388.347534 L 711.040649 420.412415 L 733.295227 406.878418 C 736.761719 404.770264 740.911682 404.098389 744.869812 405.062683 C 748.806702 405.992493 752.182495 408.498108 754.290771 411.964844 C 756.398926 415.431396 757.07074 419.58136 756.085327 423.504944 C 755.120972 427.462769 752.615356 430.838562 749.14856 432.946838 L 726.893982 446.480835 L 746.394043 478.545715 C 748.502136 482.012085 749.153015 486.127411 748.188721 490.085724 C 747.224365 494.043579 744.774353 497.432922 741.307678 499.541168 C 737.840881 501.649475 733.670166 502.286469 729.746521 501.301239 C 725.788635 500.336792 722.43396 497.865814 720.325623 494.399048 L 700.825623 462.334167 L 653.265625 491.257477 L 697.620361 564.192139 C 700.424133 568.80249 700.55603 574.562927 698.016418 579.288574 C 695.463501 584.070068 690.583496 587.132935 685.213318 587.359619 L 640.672241 589.232788 L 663.650513 627.01709 C 672.652283 641.819092 673.930176 660.083313 667.038818 676.002441 L 653.044373 708.349976 L 602.850342 625.813538 Z"></path>
+    </g>
   </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87 51" id="barge-fuel">
     <g id="fuel-barge">
