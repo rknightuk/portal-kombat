@@ -733,6 +733,8 @@ boats?
                     document.getElementById('yon-win').style.display = 'none'
                     document.getElementById('yon-loss').style.display = 'none'
                     document.getElementById('yon-window').classList.add('hidden')
+
+                    renderScore()
                 }, 3000)
 
             }
