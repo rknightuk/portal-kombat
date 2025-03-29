@@ -138,6 +138,9 @@
             }
 
             @media (max-width: 1000px) {
+                body {
+                    padding: 0.5em;
+                }
                 header h1 {
                     font-size: 1.3em;
                 }
