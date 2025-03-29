@@ -137,6 +137,23 @@
                 box-shadow: 0 0 5px var(--uchu-dark-gray);
             }
 
+            @media (max-width: 1000px) {
+                header h1 {
+                    font-size: 1.3em;
+                }
+                .board {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .board__card {
+                    width: 100%;
+                    height: 100%;
+                    aspect-ratio: auto;
+                    width: 100%;
+                }
+            }
+
             .board__card h1 {
                 font-size: 1.5em;
                 text-align: center;
@@ -419,6 +436,14 @@ boats?
             </div>
 
             <div class="board__vs">
+            <div class="buttons">
+                    <button id="next" disabled>Next Round</button>
+                    <button id="reset">Reset</button>
+                </div>
+
+                <div class="buttons2">
+                    <button id="yon" disabled>Yacht or Not?</button>
+                </div>
                 <div class="scoreboard box">
                     <dl>
                         <dt>Your Score</dt>
@@ -446,15 +471,6 @@ boats?
                             </div>
                         </div>
                     </dl>
-                </div>
-
-                <div class="buttons">
-                    <button id="next" disabled>Next Round</button>
-                    <button id="reset">Reset</button>
-                </div>
-
-                <div class="buttons2">
-                    <button id="yon" disabled>Yacht or Not?</button>
                 </div>
 
             </div>
@@ -544,9 +560,11 @@ boats?
         </div>
 
         <footer>
+            <img src="/assets/qr-code.png" style="width: 265px">
+
             <p>a <a href="https://rknight.me">Robb Knight</a> curio</p>
 
-            <a href="https://hackpompey.co.uk"><img src="/assets/hack-pompey-sea-change.svg" /></a>
+            <a href="https://hackpompey.co.uk"><img src="/assets/hack-pompey-sea-change.svg" style="width: 100px;"></a>
         </footer>
 
         <script>
