@@ -563,9 +563,17 @@ boats?
         </div>
 
         <footer>
-            <img src="/assets/qr-code.png" style="width: 265px">
+            {{-- <img src="/assets/qr-code.png" style="width: 265px"> --}}
 
             <p>a <a href="https://rknight.me">Robb Knight</a> curio</p>
+
+            <p>
+                Ship logo by <a href="https://thenounproject.com/icon/ship-7716042/">Md Moniruzzaman</a> | Boat icons by <a href="https://thenounproject.com/browse/collection-icon/ship-line-129286/">iconcheese</a>
+            </p>
+
+            <p>
+                Main font is <a href="https://simplebits.shop/products/ships-whistle">Ships Whistle by SimpleBits</a> | Yacht or Not font is <a href="https://www.dafont.com/dusty.font">Dusty</a>
+            </p>
 
             <a href="https://hackpompey.co.uk"><img src="/assets/hack-pompey-sea-change.svg" style="width: 100px;"></a>
         </footer>
