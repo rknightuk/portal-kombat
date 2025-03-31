@@ -638,7 +638,16 @@ boats?
                     const card1 = gameData.card1[o]
                     const card2 = gameData.card2[o]
 
-                    if (card1 > card2) {
+                    let cardOneWin = card1 > card2
+                    let cardTwoWin = card1 < card2
+                    let cardOneDraw = card1 === card2
+
+                    if (0 === 'timeInPort') {
+                        cardOneWin = card1 < card2
+                        cardTwoWin = card1 > card2
+                    }
+
+                    if (cardOneWin) {
                         gameData.wins++
                         document.getElementById('c1').classList.add('winner')
                         document.getElementById('c2').classList.remove('winner')
@@ -652,7 +661,7 @@ boats?
                                 })
                                 .join(' ')
                         }
-                    } else if (card1 < card2) {
+                    } else if (cardTwoWin) {
                         gameData.losses++
                         document.getElementById('c1').classList.remove('winner')
                         document.getElementById('c2').classList.add('winner')
